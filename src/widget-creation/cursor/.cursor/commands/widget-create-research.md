@@ -9,6 +9,8 @@ You are tasked with process of creating a new prompt for generating a new widget
 
 When started, you have been provided with path to the folder, which contains user input files. These files contain requirements and design for the new widget. You must follow these when creating the final prompt.
 
+!In case user didn't provide any path, ask them to provide it before proceeding!
+
 ## Steps to follow
 
 - First, check all documentation links in the `./instructions/docs.instructions.md` file using Kentico Docs MCP.

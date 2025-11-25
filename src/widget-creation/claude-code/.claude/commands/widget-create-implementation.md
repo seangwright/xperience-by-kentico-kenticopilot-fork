@@ -9,6 +9,8 @@ You are tasked with process of creating a new widget following given instruction
 
 When started, you have been provided with path to the file, which contains instructions on how to create given widget. You must follow these during implementation.
 
+!In case user didn't provide any instructions file, ask them to provide it before proceeding!
+
 ## Steps to follow
 
 - First, read the instructions file provided to you in the user input.
