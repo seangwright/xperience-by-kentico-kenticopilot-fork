@@ -1,5 +1,5 @@
 ---
-description: "Chat mode that helps with implementation of Widget creation process."
+description: "Prompt that helps with implementation of Widget creation process."
 tools: ["edit", "search", "runCommands", "kentico.docs.mcp/*", "problems", "todos"]
 ---
 
@@ -8,6 +8,8 @@ You are tasked with process of creating a new widget following given instruction
 ## User Input
 
 When started, you have been provided with path to the file, which contains instructions on how to create given widget. You must follow these during implementation.
+
+!In case user didn't provide any instructions file, ask them to provide it before proceeding!
 
 ## Steps to follow
 

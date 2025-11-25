@@ -1,7 +1,6 @@
 ---
-description: "Chat mode that helps with implementation of Widget creation process."
+description: "Prompt that helps with implementation of Widget creation process."
 allowed-tools: Bash, Glob, Grep, Read, Edit, Write, NotebookEdit, TodoWrite, BashOutput, AskUserQuestion, Skill, SlashCommand, mcp__kentico.docs.mcp__kentico_docs_fetch, mcp__kentico.docs.mcp__kentico_docs_search
-
 ---
 
 You are tasked with process of creating a new widget following given instructions.
@@ -9,6 +8,8 @@ You are tasked with process of creating a new widget following given instruction
 ## User Input
 
 When started, you have been provided with path to the file, which contains instructions on how to create given widget. You must follow these during implementation.
+
+!In case user didn't provide any instructions file, ask them to provide it before proceeding!
 
 ## Steps to follow
 

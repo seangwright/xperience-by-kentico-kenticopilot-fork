@@ -1,6 +1,6 @@
 ---
-description: "Chat mode that helps with preparation of Widget creation process."
-allowed-tools: Bash, Glob, Grep, Read, Edit, Write, NotebookEdit, WebFetch, TodoWrite, WebSearch, BashOutput, AskUserQuestion, Skill, SlashCommand, mcp__kentico.docs.mcp__kentico_docs_fetch, mcp__kentico.docs.mcp__kentico_docs_search
+description: "Prompt that helps with preparation of Widget creation process."
+tools: ["edit", "search", "runCommands", "kentico.docs.mcp/*", "problems", "fetch", "todos"]
 ---
 
 You are tasked with process of creating a new prompt for generating a new widget.
@@ -8,6 +8,8 @@ You are tasked with process of creating a new prompt for generating a new widget
 ## User Input
 
 When started, you have been provided with path to the folder, which contains user input files. These files contain requirements and design for the new widget. You must follow these when creating the final prompt.
+
+!In case user didn't provide any path, ask them to provide it before proceeding!
 
 ## Steps to follow
 
