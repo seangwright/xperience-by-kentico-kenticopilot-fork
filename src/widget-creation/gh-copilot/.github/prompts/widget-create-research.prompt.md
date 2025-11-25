@@ -1,5 +1,5 @@
 ---
-description: "Chat mode that helps with preparation of Widget creation process."
+description: "Prompt that helps with preparation of Widget creation process."
 tools: ["edit", "search", "runCommands", "kentico.docs.mcp/*", "problems", "fetch", "todos"]
 ---
 

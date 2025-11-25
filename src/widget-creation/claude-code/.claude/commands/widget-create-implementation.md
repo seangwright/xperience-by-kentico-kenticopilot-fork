@@ -1,5 +1,5 @@
 ---
-description: "Chat mode that helps with implementation of Widget creation process."
+description: "Prompt that helps with implementation of Widget creation process."
 allowed-tools: Bash, Glob, Grep, Read, Edit, Write, NotebookEdit, TodoWrite, BashOutput, AskUserQuestion, Skill, SlashCommand, mcp__kentico.docs.mcp__kentico_docs_fetch, mcp__kentico.docs.mcp__kentico_docs_search
 ---
 
