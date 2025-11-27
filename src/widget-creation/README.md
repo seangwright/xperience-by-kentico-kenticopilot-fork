@@ -84,7 +84,7 @@ The implementation stage generates:
 - View model class
 - Localized resource strings (creates a .resx file and the corresponding registration class if none found in the workspace)
 
-If your project contains already contains widgets, the prompt also mimics their implementation patterns and filesystem structure.
+If your project already contains widgets, the prompt also mimics their implementation patterns and filesystem structure.
 
 ## Included files
 
