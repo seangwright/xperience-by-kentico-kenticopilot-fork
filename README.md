@@ -14,7 +14,7 @@ AI agent prompts and instructions for Xperience by Kentico development. This rep
 
 ## Requirements
 
-- [Xperience by Kentico](https://docs.kentico.com) 28.0.0 or newer
+- [Xperience by Kentico](https://docs.kentico.com) 30.6.0 or newer
 - One of the following AI coding assistants:
   - [GitHub Copilot](https://github.com/features/copilot)
   - [Cursor](https://cursor.sh/)
