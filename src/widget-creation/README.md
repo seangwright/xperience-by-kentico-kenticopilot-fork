@@ -12,7 +12,7 @@ These prompts provides two-stage AI assistance for building custom Page Builder 
 ## Prerequisites
 
 - Xperience by Kentico project with Page Builder configured
-- AI coding assistant installed (GitHub Copilot, Cursor, or Claude Desktop)
+- AI coding assistant installed (GitHub Copilot, Cursor, or Claude Code)
 - Widget requirements file describing the main use cases and behavior
 - Widget design file (optional, exported from Figma or similar)
 
@@ -32,12 +32,14 @@ cp -r src/widget-creation/gh-copilot/.github/* YOUR_PROJECT/.github/
 cp -r src/widget-creation/cursor/.cursor/* YOUR_PROJECT/.cursor/
 ```
 
-**Claude Desktop:**
+**Claude Code:**
 ```bash
 cp -r src/widget-creation/claude-code/.claude/* YOUR_PROJECT/.claude/
 ```
 
 This also adds the Xperience by Kentico [Documentation MCP server](https://docs.kentico.com/x/mcp_server_xp) to your workspace via the `.vscode/mcp.json` file.
+
+> Note: For Claude Code, you need to add the server manually via the command line: [instructions](src/widget-creation/claude-code/MCP_Setup.md)
 
 ### 2. Prepare context files
 

@@ -10,7 +10,7 @@ AI agent prompts and instructions for Xperience by Kentico development. This rep
 
 - GitHub Copilot
 - Cursor
-- Claude Desktop
+- Claude Code
 
 ## Requirements
 
