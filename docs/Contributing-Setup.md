@@ -1,82 +1,77 @@
-# Contributing Setup
+# Contributing setup
 
----This documents the steps a maintainer or developer would follow to work on the library in their development environment---
+This repository contains AI agent prompts, instructions, and related materials for Xperience by Kentico development assistance. This guide explains how to contribute changes to these materials.
 
----Update the details for this project, replacing "repotemplate" and anything else that needs changed---
+## Required software
 
-## Required Software
+### Text editor
 
-The requirements to setup, develop, and build this project are listed below.
+You need a text editor to work with Markdown and prompt files. We recommend [VS Code](https://code.visualstudio.com/) for its Markdown support and helpful extensions.
 
-### .NET Runtime
+### AI coding assistants
 
-.NET SDK 7.0 or newer
+You can test your prompt changes with AI assistants, but this is optional. This repository currently supports:
 
-- <https://dotnet.microsoft.com/en-us/download/dotnet/8.0>
-- See `global.json` file for specific SDK requirements
+- [GitHub Copilot](https://github.com/features/copilot)
+- [Cursor](https://cursor.sh/)
+- [Claude Code](https://claude.ai/)
 
-### Node.js Runtime
+Testing with these tools helps validate that your prompt changes work as intended.
 
-- [Node.js](https://nodejs.org/en/download) 20.10.0 or newer
-- [NVM for Windows](https://github.com/coreybutler/nvm-windows) to manage multiple installed versions of Node.js
-- See `engines` in the solution `package.json` for specific version requirements
+## Repository structure
 
-### C# Editor
+- `src/` - Prompt files organized by use case (e.g., `widget-creation/`)
+- `examples/` - Examples of files passed to LLMs as context for corresponding scenarios
 
-- VS Code
-- Visual Studio
-- Rider
+### AI assistant organization
 
-### Database
+Prompt files are organized by AI assistant:
 
-SQL Server 2019 or newer compatible database
+- `claude-code/` - Claude Code configurations
+- `cursor/` - Cursor configurations
+- `gh-copilot/` - GitHub Copilot configurations
 
-- [SQL Server Linux](https://learn.microsoft.com/en-us/sql/linux/sql-server-linux-setup?view=sql-server-ver15)
-- [Azure SQL Edge](https://learn.microsoft.com/en-us/azure/azure-sql-edge/disconnected-deployment)
+## Contributing to prompt files
 
-### SQL Editor
+### Prompt engineering best practices
 
-- MS SQL Server Management Studio
-- Azure Data Studio
+When you create or modify prompt files:
 
-## Sample Project
+- Write clear, specific instructions
+- Include context and examples
+- Test prompts with the target AI assistant
+- Follow the structure of existing prompts
 
-### Database Setup
+### Multi-assistant support
 
-Running the sample project requires creating a new Xperience by Kentico database using the included template.
+When you contribute prompts for multiple AI assistants:
 
-Change directory in your console to `./examples/DancingGoat` and follow the instructions in the Xperience
-documentation on [creating a new database](https://docs.xperience.io/xp26/developers-and-admins/installation#Installation-CreatetheprojectdatabaseCreateProjectDatabase).
+- Organize files in assistant-specific subdirectories (`claude-code/`, `cursor/`, `gh-copilot/`)
+- Follow each assistant's configuration conventions
+- Test with the target assistant
 
-### Admin Customization
+## Development workflow
 
-To run the Sample app Admin customization in development mode, add the following to your [User Secrets](https://learn.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-7.0&tabs=windows#secret-manager) for the application.
+1. Create a new branch with one of the following prefixes:
 
-```json
-"CMSAdminClientModuleSettings": {
-  "kentico-xperience-integrations-repotemplate": {
-    "Mode": "Proxy",
-    "Port": 3009
-  }
-}
-```
+   - `feat/` - new functionality
+   - `refactor/` - restructuring of existing features
+   - `fix/` - bugfixes
 
-## Development Workflow
+1. Validate your Markdown formatting:
 
-1. Create a new branch with one of the following prefixes
+   - Use VS Code's Markdown preview to check formatting
+   - Verify proper syntax and link validity
+   - Follow existing file organization patterns
 
-   - `feat/` - for new functionality
-   - `refactor/` - for restructuring of existing features
-   - `fix/` - for bugfixes
+1. Commit your changes with a commit message following the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/#summary) convention.
 
-1. Run `dotnet format` against the `Kentico.Xperience.RepoTemplate` solution
+   - See [`.github/instructions/commit-messages.instructions.md`](.github/instructions/commit-messages.instructions.md) for guidelines
 
-   > use `dotnet: format` VS Code task.
+1. Create a pull request on GitHub.
 
-1. Commit changes, with a commit message preferably following the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/#summary) convention.
-
-1. Once ready, create a PR on GitHub. The PR will need to have all comments resolved and all tests passing before it will be merged.
-
-   - The PR should have a helpful description of the scope of changes being contributed.
-   - Include screenshots or video to reflect UX or UI updates
-   - Indicate if new settings need to be applied when the changes are merged - locally or in other environments
+   - Write a clear description of the changes
+   - Include screenshots or recordings demonstrating prompt testing results (if applicable)
+   - Verify prompt clarity and documentation quality
+   - Indicate if new instructions affect existing workflows
+   - Resolve all comments before the PR is merged
