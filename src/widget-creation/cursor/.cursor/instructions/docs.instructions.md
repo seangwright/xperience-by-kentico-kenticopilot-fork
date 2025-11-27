@@ -11,7 +11,7 @@
 
 ## UI Form Components
 
-- **UI Form Components**: https://docs.kentico.com/documentation/developers-and-admins/customization/extend-the-administration-interface/ui-form-components/reference-admin-ui-form-components
+- **UI Form Components**: https://docs.kentico.com/documentation/developers-and-admins/customization/extend-the-administration-interface/ui-form-components
 - **Reference - Admin UI form components**: https://docs.kentico.com/documentation/developers-and-admins/customization/extend-the-administration-interface/ui-form-components/reference-admin-ui-form-components
 
 ## Page URLs
