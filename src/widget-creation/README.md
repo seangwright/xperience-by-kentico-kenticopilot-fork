@@ -71,7 +71,7 @@ Optional: The instructions file created in the research stage contains all the i
 ```
 /widget-create-implementation 
 
-Follow instructions in: widget-creation\ARTICLE_SHOWCASE.instructions.md
+Follow instructions in: widget-creation/ARTICLE_SHOWCASE.instructions.md
 ```
 
 ## Prompt output
