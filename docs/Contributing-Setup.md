@@ -14,7 +14,7 @@ You can test your prompt changes with AI assistants, but this is optional. This 
 
 - [GitHub Copilot](https://github.com/features/copilot)
 - [Cursor](https://cursor.sh/)
-- [Claude Code](https://claude.ai/)
+- [Claude Code](https://www.claude.com/product/claude-code)
 
 Testing with these tools helps validate that your prompt changes work as intended.
 
