@@ -66,7 +66,7 @@ When you contribute prompts for multiple AI assistants:
 
 1. Commit your changes with a commit message following the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/#summary) convention.
 
-   - See [`.github/instructions/commit-messages.instructions.md`](.github/instructions/commit-messages.instructions.md) for guidelines
+   - See the [Conventional Commits documentation](https://www.conventionalcommits.org/en/v1.0.0/#summary) for guidelines
 
 1. Create a pull request on GitHub.
 
