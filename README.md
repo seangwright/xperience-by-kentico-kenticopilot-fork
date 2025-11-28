@@ -43,7 +43,7 @@ Prompts are transferrable to other solutions. Follow the conventions of your spe
     cp -r src/widget-creation/claude-code/* YOUR_PROJECT/
     ```
 
-    - Prompts are transferrable to other solutions. Follow the conventions of your specific assistant.
+    - Prompts are transferable to other solutions. Follow the conventions of your specific assistant.
 
 1. Follow the use case README in `src/` for specific instructions.
 
