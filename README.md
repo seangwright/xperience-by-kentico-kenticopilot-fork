@@ -6,40 +6,44 @@
 
 AI agent prompts and instructions for Xperience by Kentico development. This repository provides pre-configured prompts for common development tasks, helping developers accelerate their workflow with AI coding assistants.
 
-**Supported AI assistants:**
+This repository contains prompts for the following solutions:
 
 - GitHub Copilot
 - Cursor
 - Claude Code
 
+Prompts are transferrable to other solutions. Follow the conventions of your specific assistant.
+
 ## Requirements
 
 - [Xperience by Kentico](https://docs.kentico.com) 30.6.0 or newer
-- One of the following AI coding assistants:
+- An AI coding assistant, for example:
   - [GitHub Copilot](https://github.com/features/copilot)
   - [Cursor](https://cursor.sh/)
-  - [Claude Code](https://github.com/anthropics/claude-code)
+  - [Claude Code](https://www.claude.com/product/claude-code)
 
 ## Setup
 
 1. Clone this repository:
 
-   ```bash
-   git clone https://github.com/Kentico/xperience-by-kentico-kenticopilot.git
-   ```
+    ```bash
+    git clone https://github.com/Kentico/xperience-by-kentico-kenticopilot.git
+    ```
 
 1. Copy the files for your AI assistant to your Xperience project:
 
-   ```bash
-   # For GitHub Copilot
-   cp -r src/widget-creation/gh-copilot/.github/* YOUR_PROJECT/.github/
+    ```bash
+    # For GitHub Copilot
+    cp -r src/widget-creation/gh-copilot/* YOUR_PROJECT/
 
-   # For Cursor
-   cp -r src/widget-creation/cursor/.cursor/* YOUR_PROJECT/.cursor/
+    # For Cursor
+    cp -r src/widget-creation/cursor/* YOUR_PROJECT/
 
-   # For Claude Code
-   cp -r src/widget-creation/claude-code/.claude/* YOUR_PROJECT/.claude/
-   ```
+    # For Claude Code
+    cp -r src/widget-creation/claude-code/* YOUR_PROJECT/
+    ```
+
+    - Prompts are transferrable to other solutions. Follow the conventions of your specific assistant.
 
 1. Follow the use case README in `src/` for specific instructions.
 

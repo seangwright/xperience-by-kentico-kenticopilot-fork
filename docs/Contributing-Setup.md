@@ -10,13 +10,13 @@ You need a text editor to work with Markdown and prompt files. We recommend [VS 
 
 ### AI coding assistants
 
-You can test your prompt changes with AI assistants, but this is optional. This repository currently supports:
+Test your prompt changes with AI assistants. This repository currently contains workflows for:
 
 - [GitHub Copilot](https://github.com/features/copilot)
 - [Cursor](https://cursor.sh/)
 - [Claude Code](https://www.claude.com/product/claude-code)
 
-Testing with these tools helps validate that your prompt changes work as intended.
+Testing with these tools helps validate that your changes work as intended.
 
 ## Repository structure
 
@@ -52,23 +52,23 @@ When you contribute prompts for multiple AI assistants:
 
 ## Development workflow
 
-1. Create a new branch with one of the following prefixes:
+1. Fork this repository.
+2. Create a new branch with one of the following prefixes:
 
    - `feat/` - new functionality
    - `refactor/` - restructuring of existing features
    - `fix/` - bugfixes
 
-1. Validate your Markdown formatting:
+3. Validate your Markdown formatting:
 
-   - Use VS Code's Markdown preview to check formatting
    - Verify proper syntax and link validity
    - Follow existing file organization patterns
 
-1. Commit your changes with a commit message following the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/#summary) convention.
+4. Commit your changes with a commit message following the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/#summary) convention.
 
    - See the [Conventional Commits documentation](https://www.conventionalcommits.org/en/v1.0.0/#summary) for guidelines
 
-1. Create a pull request on GitHub.
+5. Create a pull request on GitHub, targeting this repository.
 
    - Write a clear description of the changes
    - Include screenshots or recordings demonstrating prompt testing results (if applicable)

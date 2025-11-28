@@ -6,13 +6,13 @@ This guide explains how to use the AI agent prompts and instructions in this rep
 
 Before you start, you need:
 
-- An AI coding assistant installed ([GitHub Copilot](https://github.com/features/copilot), [Cursor](https://cursor.sh/), or [Claude Code](https://claude.ai/))
+- An AI coding assistant ([GitHub Copilot](https://github.com/features/copilot), [Cursor](https://cursor.sh/), or [Claude Code](https://www.claude.com/product/claude-code))
 - Git installed on your machine
-- Access to an Xperience by Kentico project (for testing prompts)
+- Access to an Xperience by Kentico project
 
-## Install AI coding assistant
+## Install an AI coding assistant
 
-Choose and install one of the supported AI coding assistants:
+Install an AI coding assistant. This repository contains and focuses on prompts for select popular solutions. To transfer the prompts to other assistants, follow the conventions of your specific solution.
 
 ### GitHub Copilot
 
@@ -28,7 +28,7 @@ Choose and install one of the supported AI coding assistants:
 
 ### Claude Code
 
-1. Install [Claude Code](https://github.com/anthropics/claude-code).
+1. Install [Claude Code](https://www.claude.com/product/claude-code).
 1. Sign in to your Anthropic account.
 1. Enable the code editing features.
 
@@ -49,42 +49,40 @@ Choose and install one of the supported AI coding assistants:
 
 ## Copy files to your project
 
-The repository organizes prompt files by AI assistant. Copy the files that match your chosen assistant.
+The repository organizes prompt files by AI assistant. Copy the files that match your chosen assistant to the root of your repository.
 
 ### GitHub Copilot
 
 1. Navigate to the use case directory under `src/`.
-1. Copy files from the `gh-copilot/` subdirectory.
-1. Paste them into your project's `.github/` directory.
+2. Copy files from the `gh-copilot/` subdirectory to the root of your project.
 
 **Example for widget creation:**
 
 ```bash
-cp -r src/widget-creation/gh-copilot/.github/* YOUR_PROJECT/.github/
+cp -r src/widget-creation/gh-copilot/* YOUR_PROJECT/
 ```
 
 ### Cursor
 
 1. Navigate to the use case directory under `src/`.
-1. Copy files from the `cursor/` subdirectory.
-1. Paste them into your project's `.cursor/` directory.
+2. Copy files from the `cursor/` subdirectory to the root of your project.
 
 **Example for widget creation:**
 
 ```bash
-cp -r src/widget-creation/cursor/.cursor/* YOUR_PROJECT/.cursor/
+cp -r src/widget-creation/cursor/* YOUR_PROJECT/
 ```
 
 ### Claude Code
 
 1. Navigate to the use case directory under `src/`.
-1. Copy files from the `claude-code/` subdirectory.
-1. Paste them into your project's `.claude/` directory.
+1. Copy files from the `claude-code/` subdirectory to the root of your project.
+1. Follow the instructions in 
 
 **Example for widget creation:**
 
 ```bash
-cp -r src/widget-creation/claude-code/.claude/* YOUR_PROJECT/.claude/
+cp -r src/widget-creation/claude-code/* YOUR_PROJECT/
 ```
 
 ## Use the prompts
@@ -95,9 +93,9 @@ After copying the files to your project:
 1. Open the README file for your specific use case (e.g., `src/widget-creation/README.md`).
 1. Follow the instructions in the README.
 
-Each use case README explains:
+The README file inside each use case folder explains:
 
 - What the prompts do
 - How to trigger them
-- What inputs they expect
+- What inputs are expected
 - Example scenarios
