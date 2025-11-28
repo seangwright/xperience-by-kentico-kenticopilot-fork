@@ -6,7 +6,7 @@ This guide explains how to use the AI agent prompts and instructions in this rep
 
 Before you start, you need:
 
-- An AI coding assistant ([GitHub Copilot](https://github.com/features/copilot), [Cursor](https://cursor.sh/), or [Claude Code](https://www.claude.com/product/claude-code))
+- An AI coding assistant (e.g., [GitHub Copilot](https://github.com/features/copilot), [Cursor](https://cursor.sh/), [Claude Code](https://www.claude.com/product/claude-code))
 - Git installed on your machine
 - Access to an Xperience by Kentico project
 
@@ -18,7 +18,6 @@ Install an AI coding assistant. This repository contains and focuses on prompts 
 
 1. Install the [GitHub Copilot extension](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) for VS Code.
 1. Sign in to your GitHub account.
-1. Activate your GitHub Copilot subscription.
 
 ### Cursor
 
