@@ -76,7 +76,6 @@ cp -r src/widget-creation/cursor/* YOUR_PROJECT/
 
 1. Navigate to the use case directory under `src/`.
 1. Copy files from the `claude-code/` subdirectory to the root of your project.
-1. Follow the instructions in 
 
 **Example for widget creation:**
 
