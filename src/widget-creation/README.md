@@ -108,4 +108,4 @@ See `examples/widget-creation/` for a complete example of context files for an a
 
 ## Prompt customization
 
-These prompt files serve as baseline for bootstrapping new widgets in Xperience by Kentico solutions. Modify and enhance the files as required by your projects, workflow, and requirements.
+These prompt files serve as baseline for bootstrapping new widgets in Xperience by Kentico solutions. Modify and enhance the files as required by your projects, workflow, and requirements. Place project-specific information into the `instructions` folder as new files -- the prompt instructs the agent to read all files in the directory.
