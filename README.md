@@ -24,6 +24,32 @@ Prompts are transferrable to other solutions. Follow the conventions of your spe
 
 ## Setup
 
+### Option A: Plugin marketplace (recommended)
+
+Install plugins directly from the KentiCopilot marketplace. Plugins automatically configure MCP servers and make commands available in your AI assistant.
+
+**GitHub Copilot CLI:**
+
+```bash
+copilot plugin marketplace add Kentico/xperience-by-kentico-kenticopilot
+copilot plugin install kentico-widget-creation@kentico-kenticopilot
+```
+
+**Claude Code:**
+
+```bash
+/plugin marketplace add Kentico/xperience-by-kentico-kenticopilot
+/plugin install kentico-widget-creation@kentico-kenticopilot
+```
+
+**Cursor:**
+
+Cursor does not currently support the shared plugin marketplace format. Use Option B to install files manually.
+
+See the [Usage Guide](./docs/Usage-Guide.md) for complete marketplace installation instructions, including VS Code agent plugin discovery.
+
+### Option B: Manual file copy
+
 1. Clone this repository:
 
     ```bash
@@ -49,7 +75,7 @@ Prompts are transferrable to other solutions. Follow the conventions of your spe
 
 ## Full Instructions
 
-View the [Usage Guide](./docs/Usage-Guide.md) for more detailed instructions.
+View the [Usage Guide](./docs/Usage-Guide.md) for more detailed instructions, including plugin marketplace setup for each AI editor.
 
 ## Contributing
 
