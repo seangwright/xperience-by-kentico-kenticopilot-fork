@@ -1,0 +1,41 @@
+{
+  "name": "kentico-kenticopilot",
+  "owner": {
+    "name": "Kentico",
+    "email": "devrel@kentico.com"
+  },
+  "metadata": {
+    "description": "AI agent prompts and instructions for Xperience by Kentico development",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "kentico-widget-creation",
+      "description": "AI-assisted prompts for creating Page Builder widgets in Xperience by Kentico",
+      "version": "1.0.0",
+      "source": "./plugins/widget-creation",
+      "author": {
+        "name": "Kentico"
+      },
+      "homepage": "https://github.com/Kentico/xperience-by-kentico-kenticopilot/tree/main/plugins/widget-creation",
+      "repository": "https://github.com/Kentico/xperience-by-kentico-kenticopilot",
+      "license": "MIT",
+      "keywords": ["kentico", "xperience", "widget", "page-builder", "cms", "dotnet"],
+      "category": "cms"
+    },
+    {
+      "name": "kentico-kx13-migration",
+      "description": "AI-assisted prompts for migrating Kentico Xperience 13 codebase to Xperience by Kentico",
+      "version": "1.0.0",
+      "source": "./plugins/kx13-codebase-migration",
+      "author": {
+        "name": "Kentico"
+      },
+      "homepage": "https://github.com/Kentico/xperience-by-kentico-kenticopilot/tree/main/plugins/kx13-codebase-migration",
+      "repository": "https://github.com/Kentico/xperience-by-kentico-kenticopilot",
+      "license": "MIT",
+      "keywords": ["kentico", "xperience", "migration", "kx13", "cms", "dotnet"],
+      "category": "cms"
+    }
+  ]
+}
