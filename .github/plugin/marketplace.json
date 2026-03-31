@@ -1,5 +1,5 @@
 {
-  "name": "xperience-by-kentico-kenticopilot",
+  "name": "xperience-by-kentico-kenticopilot-fork",
   "metadata": {
     "description": "AI agent skills, instructions, and workflows for Xperience by Kentico development",
     "version": "1.0.0",
@@ -18,8 +18,8 @@
       "author": {
         "name": "Kentico"
       },
-      "homepage": "https://github.com/Kentico/xperience-by-kentico-kenticopilot/tree/main/plugins/widget-creation",
-      "repository": "https://github.com/Kentico/xperience-by-kentico-kenticopilot",
+      "homepage": "https://github.com/seangwright/xperience-by-kentico-kenticopilot-fork/tree/main/plugins/widget-creation",
+      "repository": "https://github.com/seangwright/xperience-by-kentico-kenticopilot-fork",
       "license": "MIT",
       "keywords": ["kentico", "xperience", "widget", "page-builder", "cms"]
     },
@@ -31,10 +31,31 @@
       "author": {
         "name": "Kentico"
       },
-      "homepage": "https://github.com/Kentico/xperience-by-kentico-kenticopilot/tree/main/plugins/kx13-codebase-migration",
-      "repository": "https://github.com/Kentico/xperience-by-kentico-kenticopilot",
+      "homepage": "https://github.com/seangwright/xperience-by-kentico-kenticopilot-fork/tree/main/plugins/kx13-codebase-migration",
+      "repository": "https://github.com/seangwright/xperience-by-kentico-kenticopilot-fork",
       "license": "MIT",
       "keywords": ["kentico", "xperience", "migration", "kx13", "cms"]
+    },
+    {
+      "name": "update-experience",
+      "source": "./update-experience",
+      "description": "Skills, references, and workflows for updating the experience of Kentico Xperience projects",
+      "version": "1.0.0",
+      "author": {
+        "name": "Kentico"
+      },
+      "homepage": "https://github.com/seangwright/xperience-by-kentico-kenticopilot-fork/tree/main/plugins/update-experience",
+      "repository": "https://github.com/seangwright/xperience-by-kentico-kenticopilot-fork",
+      "license": "MIT",
+      "keywords": [
+        "kentico",
+        "xperience",
+        "update",
+        "dotnet",
+        "npm",
+        "refresh",
+        "hotfix"
+      ]
     }
   ]
 }
