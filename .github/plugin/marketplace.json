@@ -37,14 +37,14 @@
       "keywords": ["kentico", "xperience", "migration", "kx13", "cms"]
     },
     {
-      "name": "update-experience",
-      "source": "./update-experience",
-      "description": "Skills, references, and workflows for updating the experience of Kentico Xperience projects",
-      "version": "1.0.0",
+      "name": "update-xperience",
+      "source": "./update-xperience",
+      "description": "Skills, references, and workflows for updating Xperience by Kentico projects",
+      "version": "1.0.1",
       "author": {
         "name": "Kentico"
       },
-      "homepage": "https://github.com/seangwright/xperience-by-kentico-kenticopilot-fork/tree/main/plugins/update-experience",
+      "homepage": "https://github.com/seangwright/xperience-by-kentico-kenticopilot-fork/tree/main/plugins/update-xperience",
       "repository": "https://github.com/seangwright/xperience-by-kentico-kenticopilot-fork",
       "license": "MIT",
       "keywords": [
