@@ -2,7 +2,7 @@
   "name": "xperience-by-kentico-kenticopilot-fork",
   "metadata": {
     "description": "AI agent skills, instructions, and workflows for Xperience by Kentico development",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "pluginRoot": "./plugins"
   },
   "owner": {
@@ -40,7 +40,7 @@
       "name": "update-xperience",
       "source": "./update-xperience",
       "description": "Skills, references, and workflows for updating Xperience by Kentico projects",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "author": {
         "name": "Kentico"
       },

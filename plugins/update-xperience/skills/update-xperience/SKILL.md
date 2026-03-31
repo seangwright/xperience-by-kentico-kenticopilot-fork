@@ -30,6 +30,7 @@ Complete all steps below autonomously unless the user prompts otherwise.
 
 - Run the update-tools app from the skill folder:
   - `dotnet run ./scripts/update-tools.cs detect-versions <project-root>`
+  - This script is found relative to the current skill file (`./SKILL.md`) and is not in the Xperience application repository
 - Use the JSON output fields as source of truth:
   - `nuget`, `nugetSource` for current .NET package version and where it was detected
   - `npm`, `npmPackageName`, `npmSource` for current npm package version and where it was detected
