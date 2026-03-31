@@ -48,28 +48,30 @@ Complete all steps below autonomously unless the user prompts otherwise.
 ### Phase 2: Update
 
 - Ensure the application is not running and there are no uncommitted changes before proceeding with updates
+- `dotnet run ./scripts/update-tools.cs check-preconditions <project-root>`
+  - This script is found relative to the current skill file (`./SKILL.md`) and is not in the Xperience application repository
 - If these requirements are not met, stop and report to the user
 
-**Step 3: Update NuGet packages**
+**Steps 3–5: Update NuGet packages, npm packages, and version references**
 
-- Update .NET files: `.csproj`/`Directory.Packages.props`
-  - Replace current Xperience version with new version
+Run the update-versions command to handle all three steps deterministically:
+
+```
+dotnet run ./scripts/update-tools.cs update-versions <project-root> --from <current-version> --to <new-version>
+```
+
+- Updates `Directory.Packages.props` or `.csproj` files for all `Kentico.Xperience.*` packages
+- Updates `package.json` for all `@kentico/xperience-*` packages (preserves `^`/`~` range specifiers)
+- Replaces plain-text version references in `README.md`, `.github/workflows/`, and `mcp.json`
+- Returns a JSON result with `updated` (list of modified files and replacement counts) and `errors`
+- If `errors` is present, report them and stop before running restore/install
+
+After a successful run:
+
 - Run: `dotnet restore`
-
-**Step 4: Update npm packages**
-
-- Update `package.json`: Replace current @kentico/xperience-\* version with new version
-- Run: `npm install`
+- Run: `npm install` (if npm packages were updated)
 - Check `package-lock.json` was updated
-- If dependency resolution fails with non-trivial conflicts (peer deps, Node engine mismatch, transitive version deadlock), stop and report exact errors plus impacted packages
-
-**Step 5: Update version references**
-
-- Search for hardcoded version strings in:
-  - README.md (feature/compatibility notes)
-  - appsettings.json (if any version is documented)
-  - CI/deployment configs (.github/workflows, etc.)
-  - `mcp.json` for npm packaged mcp servers
+- If npm dependency resolution fails with non-trivial conflicts (peer deps, Node engine mismatch, transitive version deadlock), stop and report exact errors plus impacted packages
 
 ### Phase 3: Validation
 
