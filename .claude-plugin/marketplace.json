@@ -39,14 +39,14 @@
       "strict": false
     },
     {
-      "name": "update-experience",
-      "source": "./plugins/update-experience",
-      "description": "Skills, references, and workflows for updating the experience of Kentico Xperience projects",
-      "version": "1.0.0",
+      "name": "update-xperience",
+      "source": "./plugins/update-xperience",
+      "description": "Skills, references, and workflows for updating Xperience by Kentico projects",
+      "version": "1.0.1",
       "author": {
         "name": "Kentico"
       },
-      "homepage": "https://github.com/seangwright/xperience-by-kentico-kenticopilot-fork/tree/main/plugins/update-experience",
+      "homepage": "https://github.com/seangwright/xperience-by-kentico-kenticopilot-fork/tree/main/plugins/update-xperience",
       "repository": "https://github.com/seangwright/xperience-by-kentico-kenticopilot-fork",
       "license": "MIT",
       "keywords": [
